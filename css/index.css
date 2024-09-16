@@ -1,0 +1,183 @@
+/*********首页样式*************/
+body{
+  background-color: #f3f5f7;
+}
+
+.wrapper{
+  margin: 0 auto;
+  width: 1200px;
+}
+
+
+/*****头部样式***************/
+.header{
+  height: 100px;
+  background-color: #ffffff;
+}
+.header .wrapper{
+  padding-top: 29px;
+  display: flex; 
+}
+
+/* logo样式 */
+.logo a {
+  width: 195px;
+  height: 41px;
+  display: block;
+  background-image: url(../images/logo.png);
+  /* 隐藏字体 */
+  font-size: 0;
+}
+
+/*nav样式 */
+.nav{
+  margin-left: 102px;
+}
+.nav ul {
+  display: flex;
+}
+.nav ul li {
+  margin-right: 24px;
+}
+.nav ul li a {
+  display: block;
+  padding: 6px 8px;
+  line-height: 27px;
+  font-size: 19px;
+}
+.nav ul li .active,
+.nav ul li a:hover{
+  border-bottom: 2px solid #00a4ff;;
+}
+
+/* 搜索模块 */
+.search{
+  margin-left: 64px;
+  width: 412px;
+  height: 40px;
+  background-color: #f3f5f7;
+  border-radius: 20px;
+  padding-left: 19px;
+  padding-right: 12px;
+  display: flex;
+}
+.search input{
+  flex: 1;
+  border: 0;
+  background-color: transparent;
+  /*去掉input的焦点框 */
+  outline: none;
+}
+.search input ::placeholder{
+  font-size: 14px;
+  color: #999;
+}
+.search a {
+  align-self: center;
+  width: 16px;
+  height: 16px;
+  background-image: url(../images/search.png);
+}
+
+/* user样式 */
+.user{
+ margin-left: 32px;
+ margin-top: 4px;
+}
+.user img {
+  margin-right: 7px;
+  /* vertical-align 专门处理行内块和行内垂直方向对齐 */
+ vertical-align: middle;
+}
+.user span {
+  font-size: 16px;
+  color: #666;
+}
+
+
+
+/*banner样式*/
+.banner{
+  height: 420px;
+  background-color: #0092cb;
+}
+.banner .wrapper {
+  display: flex;
+  height: 420px;
+  justify-content: space-between;
+  background-image: url(../uploads/banner.png);
+}
+.banner .left{
+  width: 191px;
+  height: 420px;
+  padding: 3px 20px;
+  background-color: rgba(0, 0, 0, 0.42);
+}
+.banner .left a {
+  /* 块级元素宽度是父元素的百分之百 */
+  display: block;
+  height: 46px;
+  background: url(../images/right.png) no-repeat right center;
+  line-height: 46px;
+  font-size: 16px;
+  color: #fff;
+}
+.banner .left .active,
+.banner .left a:hover{
+  background-image: url(../images/right-hover.png);
+  color:#00a4ff;
+}
+
+.banner .right{
+  margin-top: 60px;
+  width: 218px;
+  height: 305px;
+  background-color: #209dd5;
+  border-radius: 10px;
+}
+.banner .right h3 {
+  margin-left:14px;
+  height: 48px;
+  line-height: 48px;
+  font-size: 15px;
+  font-weight: 400;
+  color: #fff;
+}
+.banner .right .content {
+  padding: 14px;
+  width: 218px;
+  height: 257px;
+  background-color: #fff;
+  border-radius: 10px;
+}
+.banner .right dl{
+  margin-bottom: 12px;
+  border-bottom: 1px solid #e0e0e0;;
+}
+.banner .right dt {
+  margin-bottom: 8px;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 700;
+}
+.banner .right dd {
+  margin-bottom: 8px;
+  font-size: 12px;
+  line-height: 16px;
+}
+.banner .right dd span {
+  color: #00a4ff;
+} 
+.banner .right dd strong {
+  color:#7d7d7d; 
+  font-weight: 400;
+}
+.banner .right a {
+  display: block;
+	height: 32px;
+  line-height: 32px;
+	background-color: #00a4ff;
+  text-align: center;
+  color: #ffffff;
+	border-radius: 15px;
+}
